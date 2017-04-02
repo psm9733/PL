@@ -1,6 +1,4 @@
-﻿  output.c
-c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\output.c(4): warning C4101: 'subject_counter' :참조되지 않은 지역 변수입니다.
-  main.c
-  코드를 생성하고 있습니다...
-  HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\documents\visual studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.exe
-  HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\documents\visual studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.pdb (Full PDB)
+﻿  linkedlist.c
+  LINK : C:\Users\PARKSANGMIN\Documents\Visual Studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\Documents\Visual Studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.exe
+  HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\Documents\Visual Studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.pdb (Full PDB)
