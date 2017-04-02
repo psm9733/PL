@@ -1,10 +1,5 @@
-﻿  outputResult.c
-  main.c
-c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\main.c(14): warning C4013: 'Linsert'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\main.c(6): warning C4101: 'number' :참조되지 않은 지역 변수입니다.
-  linkedlist.c
-  input.c
-  calc.c
-  코드를 생성하고 있습니다...
+﻿  calc.c
+c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\calc.c(15): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\calc.c(16): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\documents\visual studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.exe
   HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\documents\visual studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.pdb (Full PDB)

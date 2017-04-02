@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\..\..\Desktop\points.txt" />
+    <Text Include="grade.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

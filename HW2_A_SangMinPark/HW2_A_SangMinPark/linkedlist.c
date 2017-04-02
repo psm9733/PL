@@ -1,15 +1,15 @@
 #include "header.h"
 
-Student* InitList(List *list) {
-	Student *header = (Student *)malloc(sizeof(Student));
+void InitList(List* list) {
+	Student *header = (Student*)malloc(sizeof(Student));
 	list->head = header;
 	list->tail = header;
 	list->cur = header;
 	list->numofData = 0;
-	return header;
+	return;
 }
 
-Student* Linsert(List *list, Student student) {
+int Linsert(List* list, Student student) {
 	Student *allo_student = (Student *)malloc(sizeof(Student));
 	*allo_student = student;
 	if (list->numofData == 0) {
@@ -17,36 +17,41 @@ Student* Linsert(List *list, Student student) {
 		list->tail = list->head->next;
 		list->tail->next = NULL;
 		list->numofData++; //inital numofData = 1;
+		return true;
 	}
 	else {
 		list->tail->next = allo_student;
 		list->tail = list->tail->next;
 		list->tail->next = NULL;
 		list->numofData++;
-	}
-	return allo_student;
-}
-
-int LFirst(List *list) {
-	if (list->numofData == 0) {
-		list->cur = list->head->next;
 		return true;
 	}
 	return false;
 }
 
-int Lnext(List *list) {
+int LFirst(List* list, Student* getdata) {
+	if (list->head->next != NULL) {
+		list->cur = list->head->next;
+		getdata = list->cur;
+		return true;
+	}
+	return false;
+}
+
+int Lnext(List* list, Student* getdata) {
 	if (list->cur->next != NULL) {
 		list->cur = list->cur->next;
+		getdata = list->cur;
 		return true;
 	}
 	else if (list->numofData != 0 && list->cur->next == NULL) {
 		list->cur = list->head->next;
+		getdata = list->cur;
 		return false;
 	}
 	return false;
 }
 
-void getNumOfData(List *list, int *number) {
+void getNumOfData(List* list, int* number) {
 	*number = list->numofData;
 }
