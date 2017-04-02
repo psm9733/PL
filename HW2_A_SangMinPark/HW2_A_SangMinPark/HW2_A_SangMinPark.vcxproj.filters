@@ -21,13 +21,13 @@
     <ClCompile Include="calc.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="outputResult.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="linkedlist.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="output.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

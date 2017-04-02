@@ -150,7 +150,7 @@
     <ClCompile Include="input.c" />
     <ClCompile Include="linkedlist.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="outputResult.c" />
+    <ClCompile Include="output.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

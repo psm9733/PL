@@ -1,5 +1,6 @@
-﻿  calc.c
-c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\calc.c(15): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\calc.c(16): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  output.c
+c:\users\parksangmin\documents\visual studio 2015\projects\hw2_a_sangminpark\hw2_a_sangminpark\output.c(4): warning C4101: 'subject_counter' :참조되지 않은 지역 변수입니다.
+  main.c
+  코드를 생성하고 있습니다...
   HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\documents\visual studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.exe
   HW2_A_SangMinPark.vcxproj -> C:\Users\PARKSANGMIN\documents\visual studio 2015\Projects\HW2_A_SangMinPark\Debug\HW2_A_SangMinPark.pdb (Full PDB)
