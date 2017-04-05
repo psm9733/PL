@@ -2,9 +2,10 @@
 #include "header.h"
 
 List* readData(char *path) {
-	int number = 0;
-	int person_counter = 0;
-	int subject_counter = 0;
+	int Numberofpeople = 0;
+	int NumberofSubject = 0;
+	int ch;
+	int m, n;
 	FILE *fp;
 	List *list;
 	Student *TempStudent;
@@ -13,11 +14,32 @@ List* readData(char *path) {
 	list = (List *)malloc(sizeof(List));
 	fp = fopen(path, "rt");
 	InitList(list);
-	
-	for (person_counter; person_counter < PERSON_NUM; person_counter++) {
+	if (fp == NULL) {
+		printf("File doesn't exit\n");
+		return;
+	}
+	InitList(list);
+	while ((ch = fgetc(fp)) != EOF) {
+		printf("ch = %c\n", ch);
+		if (ch == 10) {
+			Numberofpeople++;
+		}
+		else if (ch == 32 && Numberofpeople == 0) {
+			NumberofSubject++;
+		}
+	}
+	Numberofpeople++;
+	NumberofSubject++;
+	SetStudent(TempStudent, Numberofpeople, NumberofSubject);
+	SetStudent(test, Numberofpeople, NumberofSubject);
+
+	printf("Numberofpeople = %d\n", Numberofpeople);
+	printf("NumberofSubject = %d\n", NumberofSubject);
+	fseek(fp, 0, SEEK_SET);
+	for (m = 0; m < Numberofpeople; m++) {
 		TempStudent = (Student*)malloc(sizeof(Student));
-		for (subject_counter = 0; subject_counter < SUBJECT_NUM; subject_counter++) {
-			fscanf(fp, "%d", &(TempStudent->score[subject_counter]));
+		for (n = 0; n < NumberofSubject; n++) {
+			fscanf(fp, "%d", &(TempStudent->score[n]));
 			if (feof(fp)) {
 				break;
 			}
@@ -26,5 +48,4 @@ List* readData(char *path) {
 	}
 	fclose(fp);
 	return list;
-
 }

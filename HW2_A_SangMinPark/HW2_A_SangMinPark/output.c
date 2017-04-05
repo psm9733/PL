@@ -7,7 +7,7 @@ void outputResult(List* list, char* path) {
 	FILE *fp;
 	fp = fopen(path, "wt");
 	for (person_counter = 0; person_counter < PERSON_NUM; person_counter++) {
-		fprintf(fp, "%d %d %4.1f \r\n", list->cur->score[0], list->cur->score[1], list->cur->average);
+		fprintf(fp, "%d %d %.1f \r\n", list->cur->score[0], list->cur->score[1], list->cur->average);
 		Lnext(list, temp);
 	}
 	fclose(fp);
