@@ -52,6 +52,6 @@ int Lnext(List* list, Student* getdata) {
 	return false;
 }
 
-void getNumOfData(List* list, int* number) {
+void getLNumOfStudent(List* list, int* number) {
 	*number = list->numofData;
 }

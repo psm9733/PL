@@ -30,6 +30,9 @@
     <ClCompile Include="output.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="datahandling.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

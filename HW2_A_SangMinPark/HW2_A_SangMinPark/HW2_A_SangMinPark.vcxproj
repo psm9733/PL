@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="calc.c" />
+    <ClCompile Include="datahandling.c" />
     <ClCompile Include="input.c" />
     <ClCompile Include="linkedlist.c" />
     <ClCompile Include="main.c" />

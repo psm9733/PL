@@ -8,30 +8,34 @@
 /* Data define */
 
 typedef struct student {
+	int NumberOfStudent;
+	int NumberOfSubject;
 	int *score;
-	int subject_number;
 	float average;
 	struct student *next;
 }Student;
 
-void SetStudent(Student* std, int* Numberofpeople, int* NumberofSubject);
-void Getsubject_number(Student *std);
 /* Linked list */
 
 typedef struct linkedlist {
+	int numofData;
 	Student *head;
 	Student *cur;
 	Student *tail;
-	int numofData;
-	int size;
 }List;
 
 void InitList(List* list);
 int Linsert(List* list, Student student);
 int LFirst(List* list, Student* getdata);
 int Lnext(List* list, Student* getdata);
-void getNumOfData(List* list, int* number);
-void getSize(List* list, int* size);
+void getLNumOfStudent(List* list, int* number);
+
+/* --data handling -- */
+
+void setStudent(Student* student, int Numberofpeople, int NumberofSubject);
+void getNumOfStudent(Student* student);
+int getSubjectOfNumber(Student* student);
+
 /* --file handling -- */
 
 List* readData(char* path);

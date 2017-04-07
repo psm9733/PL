@@ -2,13 +2,13 @@
 #include "header.h"
 
 List* readData(char *path) {
-	int Numberofpeople = 0;
-	int NumberofSubject = 0;
+	int NumberOfStudent = 0;
+	int NumberOfSubject = 0;
 	int ch;
 	int m, n;
 	FILE *fp;
 	List *list;
-	Student *TempStudent;
+	Student *TempStudent = (Student*)malloc(sizeof(Student));
 	Student *test = (Student*)malloc(sizeof(Student));
 
 	list = (List *)malloc(sizeof(List));
@@ -20,25 +20,25 @@ List* readData(char *path) {
 	}
 	InitList(list);
 	while ((ch = fgetc(fp)) != EOF) {
-		printf("ch = %c\n", ch);
 		if (ch == 10) {
-			Numberofpeople++;
+			NumberOfStudent++;
 		}
-		else if (ch == 32 && Numberofpeople == 0) {
-			NumberofSubject++;
+		else if (ch == 32 && NumberOfStudent == 0) {
+			NumberOfSubject++;
 		}
 	}
-	Numberofpeople++;
-	NumberofSubject++;
-	SetStudent(TempStudent, Numberofpeople, NumberofSubject);
-	SetStudent(test, Numberofpeople, NumberofSubject);
+	NumberOfStudent++;
+	NumberOfSubject++;
+	setStudent(list, TempStudent, NumberOfStudent, NumberOfSubject);
 
-	printf("Numberofpeople = %d\n", Numberofpeople);
-	printf("NumberofSubject = %d\n", NumberofSubject);
+	printf("Numberofpeople = %d\n", NumberOfStudent);
+	printf("NumberofSubject = %d\n", NumberOfSubject);
+
 	fseek(fp, 0, SEEK_SET);
-	for (m = 0; m < Numberofpeople; m++) {
+	for (m = 0; m < NumberOfStudent; m++) {
 		TempStudent = (Student*)malloc(sizeof(Student));
-		for (n = 0; n < NumberofSubject; n++) {
+		setStudent(list, TempStudent, NumberOfStudent, NumberOfSubject);
+		for (n = 0; n < NumberOfSubject; n++) {
 			fscanf(fp, "%d", &(TempStudent->score[n]));
 			if (feof(fp)) {
 				break;
