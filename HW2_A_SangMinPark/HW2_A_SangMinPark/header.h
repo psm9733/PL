@@ -33,7 +33,7 @@ void getLNumOfStudent(List* list, int* number);
 /* --data handling -- */
 
 void setStudent(List* list, Student* student, int Numberofpeople, int NumberofSubject);
-void getNumOfStudent(Student* student);
+int getNumOfStudent(Student* student);
 int getSubjectOfNumber(Student* student);
 
 /* --file handling -- */

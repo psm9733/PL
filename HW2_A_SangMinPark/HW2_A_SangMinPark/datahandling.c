@@ -8,7 +8,7 @@ void setStudent(List* list, Student* student, int Numberofpeople, int NumberofSu
 	student->score = (int*)malloc(sizeof(int)*NumberofSubject);
 }
 
-void getNumOfStudent(Student* student) {
+int getNumOfStudent(Student* student) {
 	return student->NumberOfStudent;
 }
 

@@ -4,7 +4,7 @@
 List* readData(char *path) {
 	int NumberOfStudent = 0;
 	int NumberOfSubject = 0;
-	int ch;
+	char ch;
 	int m, n;
 	FILE *fp;
 	List *list;
@@ -20,19 +20,16 @@ List* readData(char *path) {
 	}
 	InitList(list);
 	while ((ch = fgetc(fp)) != EOF) {
-		if (ch == 10) {
+		if (ch == 10) {										//Ascii  \n -> 10
 			NumberOfStudent++;
 		}
-		else if (ch == 32 && NumberOfStudent == 0) {
+		else if (ch == 32 && NumberOfStudent == 0) {		//Ascii  space(" ") -> 32
 			NumberOfSubject++;
 		}
 	}
 	NumberOfStudent++;
 	NumberOfSubject++;
 	setStudent(list, TempStudent, NumberOfStudent, NumberOfSubject);
-
-	printf("Numberofpeople = %d\n", NumberOfStudent);
-	printf("NumberofSubject = %d\n", NumberOfSubject);
 
 	fseek(fp, 0, SEEK_SET);
 	for (m = 0; m < NumberOfStudent; m++) {

@@ -1,4 +1,4 @@
-HW2_A_SangMinPark: main.o input.o calc.o output.o linkedlist.o
+HW2_A_SangMinPark: main.o input.o calc.o output.o linkedlist.o datahandling.o
 	gcc -o HW2_A_SangMinPark main.o input.o calc.o output.o linkedlist.o datahandling.o
 main.o: main.c
 	gcc -c main.c
