@@ -16,7 +16,7 @@ List* readData(char *path) {
 	InitList(list);
 	if (fp == NULL) {
 		printf("File doesn't exit\n");
-		return;
+		exit(true);
 	}
 	InitList(list);
 	while ((ch = fgetc(fp)) != EOF) {
