@@ -1,7 +1,4 @@
-﻿  output.c
-  main.c
-  input.c
-  calc.c
-  코드를 생성하고 있습니다...
-  HW4.vcxproj -> C:\Users\PARKSANGMIN\Desktop\pl_git\PL_hw4\HW4\Debug\HW4.exe
-  HW4.vcxproj -> C:\Users\PARKSANGMIN\Desktop\pl_git\PL_hw4\HW4\Debug\HW4.pdb (Full PDB)
+﻿  input.c
+c:\users\parksangmin\desktop\pl_git\pl\pl_hw4\hw4\hw4\input.c(3): warning C4029: 선언된 정식 매개 변수 목록이 정의와 다릅니다.
+  HW4.vcxproj -> C:\Users\PARKSANGMIN\Desktop\pl_git\PL\PL_hw4\HW4\Debug\HW4.exe
+  HW4.vcxproj -> C:\Users\PARKSANGMIN\Desktop\pl_git\PL\PL_hw4\HW4\Debug\HW4.pdb (Full PDB)

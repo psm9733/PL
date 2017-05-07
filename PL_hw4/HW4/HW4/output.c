@@ -1,7 +1,6 @@
-#pragma warning(disable:4996)
 #include "decl.h"
 
-void outputResult(char* path, int student_number) {
+void outputResult(char* path, int student_number, student student_list[]) {
 	int index = 0;
 	FILE *fp;
 	fp = fopen(path, "wt");

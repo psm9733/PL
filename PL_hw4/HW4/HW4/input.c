@@ -1,22 +1,25 @@
-#pragma warning(disable:4996)
 #include "decl.h"
 
-int readData(char *path) {
+int readData(char *path, student student_list[]) {
 	char ch;
 	int index = 0;
+	int exam_number = 0;
 	int student_number = 0;
 	FILE *fp;
 	fp = fopen(path, "rt");
 	while ((ch = fgetc(fp)) != EOF) {
-		if (ch == 10) 									//Ascii  \n -> 10 
+		if (ch == 32) {		//Ascii  space(" ") -> 32
+			if(student_number == 0)
+				exam_number++;
 			student_number++;
+		}
 	}
+	exam_number++;
 	fseek(fp, 0, SEEK_SET);
 	if (student_number == 0) {
 		printf("student_number is zero\n");
 		exit(true);
 	}
-	student_list[student_number];
 	for(index = 0; index < student_number; index++)
 		fscanf(fp, "%d %d", &student_list[index].mid, &student_list[index].final);
 	fclose(fp);
