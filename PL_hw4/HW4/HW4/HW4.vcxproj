@@ -154,9 +154,6 @@
   <ItemGroup>
     <ClInclude Include="decl.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\PL\HW2_A_SangMinPark\Debug\points.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

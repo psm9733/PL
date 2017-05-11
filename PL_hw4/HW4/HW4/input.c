@@ -1,6 +1,6 @@
 #include "decl.h"
 
-int readData(char *path, student student_list[]) {
+int readData(char *path, StudentScore sTable[]) {
 	char ch;
 	int index = 0;
 	int exam_number = 0;
@@ -21,7 +21,7 @@ int readData(char *path, student student_list[]) {
 		exit(true);
 	}
 	for(index = 0; index < student_number; index++)
-		fscanf(fp, "%d %d", &student_list[index].mid, &student_list[index].final);
+		fscanf(fp, "%d %d", &sTable[index].mid, &sTable[index].final);
 	fclose(fp);
 	return student_number;
 }

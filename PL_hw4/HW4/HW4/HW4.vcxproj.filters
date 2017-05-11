@@ -33,9 +33,4 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\PL\HW2_A_SangMinPark\Debug\points.txt">
-      <Filter>소스 파일</Filter>
-    </Text>
-  </ItemGroup>
 </Project>
